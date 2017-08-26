@@ -7,9 +7,18 @@
 	</STYLE>
 </HEAD>
 <BODY style="background : white">
+
 <H1 style="color : #000000">
 	NR2003 Game Configuration
 </H1>
+
+<P>Just a note, if you are like me and are racing late models or modifieds exclusively, go to your player.ini file in the players folder, go to [Aerodynamics], and use this:</P>
+<CODE>
+	employRoofFlaps=0
+</CODE>
+
+<BR>
+
 <H3 style="color : #000000">
 	Graphics configuration
 </H3>
@@ -21,12 +30,52 @@ NumEmptyPools=3<BR>
 PoolSize=524288<BR>
 ShowMemStats=0
 </CODE>
+<P>In your rend_dxg.ini or rend_ogl.ini file, use these settings:</P>
+<CODE>
+	AnisotropicLevel=0
+	TextureSetSize=-1
+	vSyncMode=0
+</CODE>
+<P>In your graphics configuration panel, change the 3D settings for NR2003 (NR2003 only) and use these settings, if applicable (Use better values if you can):</P>
+<CODE>
+	Anisotropic filtering: 16x
+	Antialiasing - FXAA: Off
+	Antialiasing - Gamma correction: On
+	Antialiasing - Mode: Override any application setting
+	Antialiasing - Setting: 8x
+	Antialiasing - Transparency: 8x (supersample)
+	Maximum pre-rendered frames: 3
+	Multi-Frame Sampled AA (MFAA): Off
+	Shader Cache: On
+	Texture filtering - Anistropic: Off
+	Texture filtering - Negative LOD bias: Clamp
+	Texture filtering - Trilinear optimization: Off
+	Triple buffering: On
+	Verticle sync: Off
+</CODE>
+
 <BR>
+
 <H3 style="color : #000000">
 	Audio
 </H3>
+<P>In your app.ini file, go to [Sounds], and use these settings:</P>
+<CODE>
+	backfireFocusOnly=0
+	backfireMaxVolume=0.980000
+	backfireMin=0.001000
+	backfireMinVolume=0.880000
+	backfirePreemptRatio=9.800000
+	enableReverb=1
+	enableWind=0
+	focusCarSoundPriority=2.000000 
+</CODE>
+<P>This one is optional, if you want more loud backfires when off-throttle, use those audio settings.</P>
+
 <BR>
+
 <A HREF="../../index.html">Home</A>
+
 <BODY>
 <HEAD>
 <HTML>
