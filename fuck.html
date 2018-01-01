@@ -1,0 +1,2023 @@
+<body class="node13 node17 node48 SelectQuotable" style="">
+
+	
+	
+	
+		
+
+<div id="loginBar">
+	<div class="pageContent">
+		<span class="helper"></span>
+	<form action="login/login" method="post" class="xenForm eAuth" id="login" style="display:none">
+
+	
+		<ul id="eAuthUnit">
+			
+				
+				
+				
+				
+				
+				
+      
+      				
+               <li><a href="register/steam?reg=1" style="text-decoration:none;display: inline-block;">
+   <img src="styles/default/steamauth/steam_signin.png" alt="Log in with Steam" style="margin:0 14px;">
+</a></li>
+                
+    
+    
+				
+			
+		</ul>
+	
+
+	<div class="ctrlWrapper">
+		<dl class="ctrlUnit">
+			<dt><label for="LoginControl">Your name or email address:</label></dt>
+			<dd><input type="text" name="login" id="LoginControl" class="textCtrl" tabindex="101"></dd>
+		</dl>
+	
+	
+		<dl class="ctrlUnit">
+			<dt>
+				<label for="ctrl_password">Do you already have an account?</label>
+			</dt>
+			<dd>
+				<ul>
+					<li><label for="ctrl_not_registered"><input type="radio" name="register" value="1" id="ctrl_not_registered" tabindex="105">
+						No, create an account now.</label></li>
+					<li><label for="ctrl_registered"><input type="radio" name="register" value="0" id="ctrl_registered" tabindex="105" checked="checked" class="Disabler">
+						Yes, my password is:</label></li>
+					<li id="ctrl_registered_Disabler">
+						<input type="password" name="password" class="textCtrl" id="ctrl_password" tabindex="102">
+						<div class="lostPassword"><a href="lost-password/" class="OverlayTrigger OverlayCloser" tabindex="106">Forgot your password?</a></div>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+	
+		
+		<dl class="ctrlUnit submitUnit">
+			<dt class=""></dt>
+			<dd>
+				<input type="submit" class="button primary" value="Log in" tabindex="104" data-loginphrase="Log in" data-signupphrase="Sign up">
+				<label for="ctrl_remember" class="rememberPassword"><input type="checkbox" name="remember" value="1" id="ctrl_remember" tabindex="103"> Stay logged in</label>
+			</dd>
+		</dl>
+	</div>
+
+	<input type="hidden" name="cookie_check" value="1">
+	<input type="hidden" name="redirect" value="/threads/rip-carlosjr.51272/">
+	<input type="hidden" name="_xfToken" value="">
+
+</form></div>
+	<div class="pageWidth">
+		
+		
+		
+	</div>
+</div>
+	
+	
+	
+		<div id="uix_paneContainer" class="off-canvas-wrapper">
+			
+				<aside class="uix_sidePane left-off-canvas-content" style="position: fixed;">
+	
+		<div class="uix_sidePane_content uix_offCanvasNavigation">
+<ul>
+	<!-- home -->
+	
+		<li class="navTab home"><a href="//www.beamng.com" class="navLink">Home</a></li>
+	
+	
+	
+	<!-- extra tabs: home -->
+	
+	
+		
+			<li class="navTab nodetab94 ">
+				<a href="https://www.beamng.com/link-forums/devblog.94/" class="navLink">DevBlog</a>
+			</li>
+		
+	
+	
+	
+	
+	<!-- forums -->
+	
+		<li class="navTab forums selected active">
+		
+			<a href="https://www.beamng.com/forums/" class="navLink">Forums</a>
+			<a href="https://www.beamng.com/forums/" class="SplitCtrl" rel="subMenu"></a>
+			
+			<div class="subMenu" style="max-height: 70px;">
+				<ul class="blockLinksList">
+				
+					
+					<li><a href="search/?type=post">Search Forums</a></li>
+					
+					<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+				
+				</ul>
+			</div>
+		</li>
+	
+	
+	
+	<!-- extra tabs: middle -->
+	
+	
+		
+			<li class="navTab resources ">
+		
+			<a href="https://www.beamng.com/resources/" class="navLink">Mods</a>
+			<a href="https://www.beamng.com/resources/" class="SplitCtrl" rel="subMenu"></a>
+			
+			<div class="subMenu">
+				<ul class="secondaryContent blockLinksList">
+	
+	<li><a href="search/?type=resource_update">Search Resources</a></li>
+	<li><a href="resources/authors">Most Active Authors</a></li>
+	<li><a href="resources/reviews">Latest Reviews</a></li>
+	
+	
+	
+</ul>
+			</div>
+		</li>
+		
+	
+	
+	
+	
+	<!-- members -->
+					
+	
+	<!-- extra tabs: end -->
+	
+	
+		
+			<li class="navTab nodetab574 ">
+				<a href="https://www.beamng.com/link-forums/wiki.574/" class="navLink">Wiki</a>
+			</li>
+		
+	
+		
+			<li class="navTab nodetab255 ">
+				<a href="https://www.beamng.com/pages/chat/" class="navLink">Chat</a>
+			</li>
+		
+	
+		
+			<li class="navTab nodetab52 ">
+				<a href="https://www.beamng.com/link-forums/whats-new.52/" class="navLink">What's new?</a>
+			</li>
+		
+	
+	
+	
+			
+
+</ul>
+</div>
+	
+</aside>
+			
+			
+				<aside class="uix_sidePane right-off-canvas-content" style="position: fixed;">
+	
+		<script>
+	var uix_offCanvasCurrentTab = 'uix_offCanvasVisitorMenu';
+	var uix_offCanvasVisitorConvoLoad = true;
+	var uix_offCanvasVisitorAlertLoad = true;
+	function uix_offCanvasVisitorTab(ele, id) {
+		jQuery('#uix_offcanvasVisitorTabs .navTab').removeClass('selected');
+		jQuery('.uix_sidePane_content.uix_offCanvasVisitorTabs ul').removeClass('activeTab').removeClass('leftTab').removeClass('rightTab');
+		
+		jQuery(ele).parent().addClass('selected');
+		jQuery('#' + id).addClass('activeTab');
+		if (id == 'uix_offCanvasVisitorMenu') {
+			if (uix_offCanvasCurrentTab == 'uix_offCanvasVisitorAlert') {
+				jQuery('#uix_offCanvasVisitorConvo').css('opacity', 0)
+				window.setTimeout(function(){jQuery('#uix_offCanvasVisitorConvo').css('opacity', 1);}, 300);
+			}
+			jQuery('#uix_offCanvasVisitorConvo').addClass('rightTab');
+			jQuery('#uix_offCanvasVisitorAlert').addClass('rightTab');
+		} else if (id == 'uix_offCanvasVisitorConvo') {
+			if (uix_offCanvasVisitorConvoLoad){
+				uix_offCanvasVisitorConvoLoad = false;
+				$('#uix_offCanvasVisitorConvo .listPlaceholder').load('conversations/popup #content div:not(.sidebar) .secondaryContent li:lt(5)');
+			}
+			jQuery('#uix_offCanvasVisitorMenu').addClass('leftTab');
+			jQuery('#uix_offCanvasVisitorAlert').addClass('rightTab');
+			
+			//XenForo.balloonCounterUpdate($('#VisitorExtraMenu_Counter'), 0);
+			//XenForo.balloonCounterUpdate($('#uix_VisitorExtraMenu_Counter'), 0);
+			//XenForo.balloonCounterUpdate($('#ConversationsMenu_Counter'), 0);
+			uix.fn.syncBaloon($('#ConversationsMenu_Counter'), $('#uix_ConversationsMenu_Counter'));
+		} else if (id == 'uix_offCanvasVisitorAlert') {
+			if (uix_offCanvasVisitorAlertLoad){
+				uix_offCanvasVisitorAlertLoad = false;
+				$('#uix_offCanvasVisitorAlert .listPlaceholder').load('account/alerts-popup #content div:not(.sidebar) .secondaryContent li:lt(5)');
+			}
+			
+			if (uix_offCanvasCurrentTab == 'uix_offCanvasVisitorMenu') {
+				jQuery('#uix_offCanvasVisitorConvo').css('opacity', 0)
+				window.setTimeout(function(){jQuery('#uix_offCanvasVisitorConvo').css('opacity', 1);}, 300);
+			}
+			jQuery('#uix_offCanvasVisitorConvo').addClass('leftTab');
+			jQuery('#uix_offCanvasVisitorMenu').addClass('leftTab');
+			
+			XenForo.balloonCounterUpdate($('#VisitorExtraMenu_Counter'), 0);
+			XenForo.balloonCounterUpdate($('#uix_VisitorExtraMenu_Counter'), 0);
+			XenForo.balloonCounterUpdate($('#AlertsMenu_Counter'), 0);
+			uix.fn.syncBaloon($('#AlertsMenu_Counter'), $('#uix_AlertsMenu_Counter'));
+		}
+		
+		uix_offCanvasCurrentTab = id;
+	}	
+</script>
+
+<div class="uix_sidePane_content uix_offCanvasVisitorTabs">
+	<div class="uix_offCanvasTabsWrapper">
+		<ul id="uix_offcanvasVisitorTabs" class="uix_offcanvasTabs">
+			<li class="navTab selected active"><a class="navLink" onclick="uix_offCanvasVisitorTab(this, 'uix_offCanvasVisitorMenu')"></a></li>
+			<li class="navTab">
+				<a onclick="uix_offCanvasVisitorTab(this, 'uix_offCanvasVisitorConvo')" class="navLink">
+					<i class="uix_icon uix_icon-inbox"></i>
+					<strong class="itemCount Zero" id="uix_ConversationsMenu_Counter" data-text="You have %d new unread conversation(s).">
+						<span class="Total">0</span>
+					</strong>
+				</a>
+			</li>
+			<li class="navTab">
+				<a onclick="uix_offCanvasVisitorTab(this, 'uix_offCanvasVisitorAlert')" class="navLink">
+					<i class="uix_icon uix_icon-alerts"></i>
+					<strong class="itemCount Zero" id="uix_AlertsMenu_Counter" data-text="You have %d new alert(s).">
+						<span class="Total">0</span>
+					</strong>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="uix_offCanvasPanes">
+		<ul class="activeTab" id="uix_offCanvasVisitorMenu">
+		
+			<li class="navTab full">
+			<div class="primaryContent menuHeader">
+				<a class="avatar Av0m NoOverlay plainImage" title="View your profile" data-avatarhtml="true"><span class="img m" style="background-image: url('styles/uix/xenforo/avatars/avatar_m.png')"></span></a>
+					
+				<h3><a href="members/0/" class="concealed" title="View your profile"></a></h3>
+					
+				<div class="muted">Guest</div>	
+				
+			</div>
+			</li>
+			
+			
+			
+			<li class="fl navTab"><a class="navLink" href="members/0/">Your Profile Page</a></li>
+			
+			
+				
+				
+				<li class="navTab"><a class="navLink" href="account/contact-details">Contact Details</a></li>
+				<li class="navTab"><a class="navLink" href="account/privacy">Privacy</a></li>
+				<li class="navTab"><a class="navLink" href="account/preferences">Preferences</a></li>
+				<li class="navTab"><a class="navLink" href="account/alert-preferences">Alert Preferences</a></li>
+				
+				
+				<li class="navTab"><a class="navLink" href="account/security">Password</a></li>
+			
+				
+			
+				<li class="navTab"><a class="navLink" href="account/news-feed">Your News Feed</a></li>
+				
+				<li class="navTab"><a class="navLink" href="account/likes">Likes You've Received</a></li>
+				<li class="navTab"><a class="navLink" href="search/member?user_id=0">Your Content</a></li>
+				<li class="navTab"><a class="navLink" href="account/following">People You Follow</a></li>
+				<li class="navTab"><a class="navLink" href="account/ignored">People You Ignore</a></li>
+				
+			
+			
+				<li class="navTab"><a href="logout/" class="LogOut navLink">Log Out</a></li>
+			
+				<li class="navTab full">				
+					<form action="account/toggle-visibility" method="post" class="AutoValidator visibilityForm navLink">
+						<label><input type="checkbox" name="visible" value="1" class="SubmitOnChange" checked="checked">
+							Show online status</label>
+						<input type="hidden" name="_xfToken" value="">
+					</form>
+				</li>
+		
+		</ul>
+		
+		<ul id="uix_offCanvasVisitorConvo" class="rightTab">
+			<div class="menuHeader primaryContent">
+				<h3>
+					<span class="Progress"></span>
+					<a href="conversations/" class="concealed">Conversations</a>
+				</h3>						
+			</div>
+					
+			<div class="listPlaceholder"></div>
+					
+			
+			<li class="navTab"><a class="navLink" href="conversations/">Show All...</a></li>
+	
+		</ul>
+		
+		<ul id="uix_offCanvasVisitorAlert" class="rightTab">
+			<div class="menuHeader primaryContent">
+				<h3>
+					<span class="Progress"></span>
+					<a href="account/alerts" class="concealed">Alerts</a>
+				</h3>
+			</div>
+					
+			<div class="listPlaceholder"></div>
+					
+			<li class="navTab"><a href="account/alert-preferences" class="floatLink navLink">Alert Preferences</a></li>
+			<li class="navTab"><a class="navLink" href="account/alerts">Show All...</a></li>
+		</ul>
+	</div>
+</div>
+	
+</aside>
+			
+			<div class="inner-wrapper">
+
+				
+				<a href="#" class="exit-off-canvas"></a>
+		
+	
+
+	
+	
+	<div class="uix_wrapperFix" style="height: 1px; margin-bottom: -1px;"></div>
+		<div id="uix_wrapper">
+
+<div id="headerMover">
+	<div id="headerProxy"></div>
+<header>
+	
+
+
+<div id="header">
+	
+
+
+
+	
+	
+	
+		
+
+
+<div id="logoBlock">
+
+		
+		
+		<div class="pageContent defaultBorderRadius">
+		
+		
+		<div class="pageWidth">
+		
+			
+		
+		<div id="logo"><a href="//www.beamng.com">
+			<span></span>
+			<img src="styles/uix/uix/logo.png" alt="BeamNG">
+			
+		</a></div>
+		
+		
+		
+			
+		
+			
+		<span class="helper"></span>
+		</div>
+	</div>	
+</div>
+	
+	
+	
+
+
+
+
+<div id="navigation" class="withSearch stickyTop lastSticky activeSticky uix_hideSubElement" style="height: 91px;">
+	<div class="sticky_wrapper" style="top: 0px;">
+		<div class="uix_navigationWrapper">
+		
+			<div class="pageContent defaultBorderRadius">
+				<nav>
+					<div class="navTabs">
+						
+						<div class="pageWidth">
+						
+							
+							<ul class="publicTabs navLeft">
+	
+							
+							<li id="logo_small" class=" uix_leftMost">
+								<a href="//www.beamng.com">
+								
+									<img src="styles/uix/uix/logo_small.png">
+								
+								</a>
+							</li>
+							
+							
+							
+
+
+											
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+
+	<li class="navTab uix_offCanvas_trigger PopupClosed" id="uix_paneTriggerLeft" style="display: list-item;">
+		<a class="navLink" href="#">
+			<i class="uix_icon uix_icon-navTrigger uix_icon-navTriggerLeft"></i> Menu
+			
+		</a>
+	</li>
+
+
+							
+							<!-- home -->
+							
+								<li class="navTab home PopupClosed"><a href="//www.beamng.com" class="navLink"><i class="uix_icon uix_icon-home"></i></a></li>
+							
+								
+								
+								<!-- extra tabs: home -->
+								
+								
+									
+										<li class="navTab nodetab94 PopupClosed">
+											<a href="https://www.beamng.com/link-forums/devblog.94/" class="navLink NoPopupGadget" rel="Menu">DevBlog</a>
+											
+										</li>
+									
+								
+								
+								
+								
+								<!-- forums -->
+								
+									<li class="navTab forums selected">
+									
+										<a href="https://www.beamng.com/forums/" class="navLink NoPopupGadget" rel="Menu">Forums</a>
+										
+										<div class="tabLinks forumsTabLinks">
+											<div class="pageWidth">
+												<div class="primaryContent menuHeader">
+													<h3>Forums</h3>
+													<div class="muted">Quick Links</div>
+												</div>
+												<ul class="secondaryContent blockLinksList">
+												
+													
+													<li style="display: none;"><a href="search/?type=post">Search Forums</a></li>
+													
+													<li style="display: none;"><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+
+													<li style="display: none; visibility: visible;"><a href="members/" rel="nofollow">Find Member</a></li>
+												
+												<li class="navigationHidden Popup PopupControl PopupClosed PopupContainerControl" style="display: none;"><a rel="Menu" class="NoPopupGadget">...</a></li></ul>
+												
+											</div>
+										</div>
+									</li>
+								
+								
+								
+								<!-- extra tabs: middle -->
+								
+								
+									
+										<li class="navTab resources PopupClosed">
+									
+										<a href="https://www.beamng.com/resources/" class="navLink NoPopupGadget" rel="Menu">Mods</a>
+										
+										<div class="Menu JsOnly tabMenu resourcesTabLinks">
+											
+												<div class="primaryContent menuHeader">
+													<h3>Mods</h3>
+													<div class="muted">Quick Links</div>
+												</div>
+												<ul class="secondaryContent blockLinksList">
+	
+	<li><a href="search/?type=resource_update">Search Resources</a></li>
+	<li><a href="resources/authors">Most Active Authors</a></li>
+	<li><a href="resources/reviews">Latest Reviews</a></li>
+	
+	
+	
+</ul>
+												
+											
+										</div>
+									</li>
+									
+								
+								
+																
+								<!-- extra tabs: end -->
+								
+								
+									
+										<li class="navTab nodetab574 PopupClosed">
+											<a href="https://www.beamng.com/link-forums/wiki.574/" class="navLink NoPopupGadget" rel="Menu">Wiki</a>
+											
+										</li>
+									
+								
+									
+										<li class="navTab nodetab255 PopupClosed" style="display: none;">
+											<a href="https://www.beamng.com/pages/chat/" class="navLink NoPopupGadget" rel="Menu">Chat</a>
+											
+										</li>
+									
+								
+									
+										<li class="navTab nodetab52 PopupClosed uix_rightMost" style="display: none;">
+											<a href="https://www.beamng.com/link-forums/whats-new.52/" class="navLink NoPopupGadget" rel="Menu">What's new?</a>
+											
+										</li>
+									
+								
+								
+								
+								<!-- responsive popup -->
+								<li class="navTab navigationHiddenTabs Popup PopupControl PopupClosed PopupContainerControl" style="display: block;">	
+												
+									<a rel="Menu" class="navLink NoPopupGadget uix_dropdownDesktopMenu"><i class="uix_icon uix_icon-navTrigger"></i><span class="uix_hide menuIcon">Menu</span></a>
+									
+									
+								</li>
+									
+								
+								<!-- no selection -->
+								
+								
+	
+									
+									
+									
+										
+	
+							</ul>
+							
+							
+							
+								
+								
+								<ul class="navRight visitorTabs">
+								
+								
+								
+									
+								
+									
+									
+									
+									
+									
+										
+
+	<li class="navTab login PopupClosed uix_leftMost">
+		
+			<a href="login/" class="navLink uix_dropdownDesktopMenu">
+				<i class="uix_icon uix_icon-signIn"></i> 
+				<strong class="loginText">Log in</strong>
+			</a>
+		
+		
+		
+		
+	</li>
+	
+	
+	<li class="navTab register PopupClosed">
+		<a href="register/" class="navLink">
+			<i class="uix_icon uix_icon-register"></i> 
+			<strong>Sign up</strong>
+		</a>
+	</li>
+	
+	
+
+									
+							
+									
+									
+									
+
+
+											
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+	
+									
+										
+
+		<li class="navTab uix_searchTab uix_rightMost">
+		
+			
+
+
+
+
+<div id="searchBar" class="hasSearchButton">
+	
+	<i id="QuickSearchPlaceholder" class="uix_icon uix_icon-search" title="Search"></i>
+	
+	
+	
+	
+	<fieldset id="QuickSearch">
+		<form action="search/search" method="post" class="formPopup">
+			
+			<div class="primaryControls">
+				<!-- block: primaryControls -->
+				<i class="uix_icon uix_icon-search" onclick="$(&quot;#QuickSearch form&quot;).submit()"></i>
+				<input type="search" name="keywords" value="" class="textCtrl" placeholder="Search..." results="0" title="Enter your search and hit enter" id="QuickSearchQuery">				
+				<!-- end block: primaryControls -->
+			</div>
+			
+			<div class="secondaryControls">
+				<div class="controlsWrapper">
+				
+					<!-- block: secondaryControls -->
+					<dl class="ctrlUnit">
+						<dt></dt>
+						<dd><ul>
+							<li><label><input type="checkbox" name="title_only" value="1" checked="checked" id="search_bar_title_only" class="AutoChecker" data-uncheck="#search_bar_thread"> Search titles only</label></li>
+						</ul></dd>
+					</dl>
+				
+					<dl class="ctrlUnit">
+						<dt><label for="searchBar_users">Posted by Member:</label></dt>
+						<dd>
+							<input type="text" name="users" value="" class="textCtrl AutoComplete" id="searchBar_users" autocomplete="off">
+							<p class="explain">Separate names with a comma.</p>
+						</dd>
+					</dl>
+				
+					<dl class="ctrlUnit">
+						<dt><label for="searchBar_date">Newer Than:</label></dt>
+						<dd><input type="text" data-orig-type="date" name="date" value="" class="textCtrl date" id="searchBar_date"></dd>
+					</dl>
+					
+					
+					<dl class="ctrlUnit">
+						<dt></dt>
+						<dd><ul>
+								
+									<li><label title="Search only RIP carlosjr"><input type="checkbox" name="type[post][thread_id]" value="51272" id="search_bar_thread" class="AutoChecker" data-uncheck="#search_bar_title_only, #search_bar_nodes"> Search this thread only</label></li>
+								
+									<li><label title="Search only General Off-Topic"><input type="checkbox" name="nodes[]" value="13" id="search_bar_nodes" class="Disabler AutoChecker" data-uncheck="#search_bar_thread"> Search this forum only</label>
+	<ul id="search_bar_nodes_Disabler" class="disabled">
+		<li><label><input type="checkbox" name="type[post][group_discussion]" value="1" id="search_bar_group_discussion" class="AutoChecker disabled" data-uncheck="#search_bar_thread" disabled=""> Display results as threads</label></li>
+	</ul></li>
+								
+						</ul></dd>
+					</dl>
+					
+				</div>
+				<!-- end block: secondaryControls -->
+				
+				<dl class="ctrlUnit submitUnit">
+					<dt></dt>
+					<dd>
+						<input type="submit" value="Search" class="button primary Tooltip">
+						<a href="search/" class="button moreOptions Tooltip">More...</a>
+						<div class="Popup" id="commonSearches">
+							<a rel="Menu" class="button NoPopupGadget Tooltip PopupControl" data-tipclass="flipped"><span class="arrowWidget"></span></a>
+							
+						</div>
+					</dd>
+				</dl>
+				
+			</div>
+			
+			<input type="hidden" name="_xfToken" value="">
+		</form>		
+	</fieldset>
+	
+
+</div>
+		</li>
+	
+
+									
+								
+								
+								
+								</ul>
+								
+							
+							
+							
+								
+
+<div id="uix_searchMinimal">
+	<form action="index.php?search/search" method="post">
+		<i id="uix_searchMinimalClose" class="uix_icon uix_icon-close" title="Close"></i>
+		<i id="uix_searchMinimalOptions" class="uix_icon uix_icon-cog" title="Options"></i>
+		<div id="uix_searchMinimalInput">
+			<input type="search" name="keywords" value="" placeholder="Search..." results="0">
+		</div>
+		<input type="hidden" name="_xfToken" value="">
+	</form>
+</div>
+
+
+							
+									
+								
+						</div>
+					</div>
+	
+				<span class="helper"></span>
+					
+				</nav>
+			</div>
+		
+		</div>
+	</div>
+</div>
+	
+	
+</div>
+
+	
+	
+</header>
+
+<div id="content" class="thread_view">
+	
+	<div class="pageWidth">
+		<div class="pageContent defaultBorderRadius">
+	
+			<!-- main content area -->
+			
+			
+			
+			
+
+			
+			
+			<div class="breadBoxTop  ">
+				
+				
+
+<nav>
+
+	
+	
+	
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+	
+
+	<fieldset class="breadcrumb" style="">
+		<a href="misc/quick-navigation-menu?selected=node-13" class="OverlayTrigger jumpMenuTrigger" data-cacheoverlay="true" title="Open quick navigation"><i class="uix_icon uix_icon-sitemap"></i><!--Jump to...--></a>
+			
+		<div class="boardTitle"><strong>BeamNG</strong></div>
+		
+		<span class="crumbs">
+			
+				<span class="crust homeCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="//www.beamng.com" class="crumb" rel="up" itemprop="url"><span itemprop="title"><i class="uix_icon uix_icon-home"></i></span></a>
+					<span class="arrow"><span></span></span>
+				</span>
+			
+
+					<span class="arrow"><span></span></span>
+				</span>
+			
+			
+			
+
+				<span class="crust selectedTabCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="https://www.beamng.com/forums/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Forums
+</span></a>
+					<span class="arrow"><span>&gt;</span></span>
+				</span>
+			
+			
+			
+				
+					<span class="crust" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+						<a href="https://www.beamng.com/forums/#beamng-drive.17" class="crumb" rel="up" itemprop="url"><span itemprop="title">BeamNG.drive</span></a>
+						<span class="arrow"><span>&gt;</span></span>
+					</span>
+				
+					<span class="crust" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+						<a href="https://www.beamng.com/categories/off-topic.48/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Off-Topic</span></a>
+						<span class="arrow"><span>&gt;</span></span>
+					</span>
+				
+					<span class="crust" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+						<a href="https://www.beamng.com/forums/general-off-topic.13/" class="crumb" rel="up" itemprop="url"><span itemprop="title">General Off-Topic</span></a>
+						<span class="arrow"><span>&gt;</span></span>
+					</span>
+				
+			
+		
+	</fieldset>
+</nav>
+				
+			</div>
+			
+			
+						
+			
+			
+			
+			
+			
+			
+			
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+	
+			
+			
+				<div class="mainContainer_noSidebar">
+			
+					
+						<!--[if lt IE 8]>
+							<p class="importantMessage">You are using an out of date browser. It  may not display this or other websites correctly.<br />You should upgrade or use an <a href="https://www.google.com/chrome/browser/" target="_blank">alternative browser</a>.</p>
+						<![endif]-->
+						
+						
+						
+						
+
+						
+						
+						
+						
+						
+						
+
+						
+						
+											
+								<!-- h1 title, description -->
+								<div class="titleBar">
+									
+									<h1>RIP carlosjr</h1>
+									
+									<p id="pageDescription" class="muted ">
+	Discussion in '<a href="forums/general-off-topic.13/">General Off-Topic</a>' started by <a href="members/killstreak451.134423/" class="username" dir="auto">killstreak451</a>, <a href="threads/rip-carlosjr.51272/"><abbr class="DateTime" data-time="1514849547" data-diff="350" data-datestring="Jan 1, 2018" data-timestring="11:32 PM" title="Jan 1, 2018 at 11:32 PM">7 minutes ago</abbr></a>.
+</p>
+								</div>
+							
+						
+						
+						
+						
+						
+						<!-- main template -->
+						
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+<div class="pageNavLinkGroup">
+	<div class="linkGroup SelectionCountContainer">
+		
+		
+	</div>
+
+	
+</div>
+
+
+
+
+
+<form action="inline-mod/post/switch" method="post" class="InlineModForm section" data-cookiename="posts" data-controls="#InlineModControls" data-imodoptions="#ModerationSelect option">
+
+	<ol class="messageList" id="messageList">
+		
+			
+				
+
+
+<li id="post-768941" class="sectionMain message     " data-author="killstreak451">
+
+	<div class="uix_message ">
+	
+		
+
+<div class="messageUserInfo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Person">	
+<div class="messageUserBlock online">	
+	
+		<div class="avatarHolder">
+			<div class="uix_avatarHolderInner">
+			<span class="helper"></span>
+			<a href="members/killstreak451.134423/" class="avatar Av134423l" data-avatarhtml="true"><img src="data/avatars/l/134/134423.jpg?1511051661" width="192" height="192" alt="killstreak451"></a>
+			
+			<span class="Tooltip onlineMarker" data-offsetx="-22" data-offsety="-8"></span>
+			<!-- slot: message_user_info_avatar -->
+			</div>
+		</div>
+		
+
+	
+		<h3 class="userText">
+			<div class="uix_userTextInner">
+				<div class="uix_usernameWrapper">
+					<a href="members/killstreak451.134423/" class="username" dir="auto" itemprop="name">killstreak451</a>
+					<div class="uix_threadSlide">
+						<span class="uix_threadSlideToggle Tooltip">
+							<span class="uix_threadSlideToggleExpand">
+								<i class="uix_icon uix_icon-expand"></i> 
+								<span class="uix_threadSlidePhrase">Expand</span>
+							</span>
+							<span class="uix_threadSlideToggleCollapse">
+								<i class="uix_icon uix_icon-collapse"></i> 
+								<span class="uix_threadSlidePhrase">Collapse</span>
+							</span>
+						</span>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<!-- slot: message_user_info_text -->
+		</h3>
+		
+	
+    
+          
+    
+    
+    
+
+		<div class="extraUserInfo">
+			
+			
+				
+					<dl class="pairsJustified">
+						<dt>Joined:</dt>
+						<dd>Dec 28, 2015</dd>
+					</dl>
+				
+				
+				
+					<dl class="pairsJustified">
+						<dt>Messages:</dt>
+						<dd><a href="search/member?user_id=134423" class="concealed" rel="nofollow">1,318</a></dd>
+					</dl>
+				
+
+				
+				
+				
+			
+				
+				
+				
+				
+				
+			
+				
+							
+						
+			
+			
+		</div>
+	
+		
+
+
+	<span class="arrow"><span></span></span>
+</div>
+</div>
+	
+		<div class="messageInfo primaryContent">
+			
+			
+			
+			<div class="messageContent">
+				<article>
+					<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
+						
+						
+						rip
+						<div class="messageTextEndMarker">&nbsp;</div>
+					</blockquote>
+				</article>
+				
+				
+			</div>
+			
+			
+			
+			
+			<div class="messageDetails">
+			
+				
+		
+		
+		
+		<a href="threads/rip-carlosjr.51272/" title="Permalink" class="item muted postNumber hashPermalink OverlayTrigger" data-href="posts/768941/permalink">#1</a>
+		
+		<span class="item muted">
+			<span class="authorEnd"><a href="members/killstreak451.134423/" class="username author" dir="auto">killstreak451</a>,</span>
+			<a href="threads/rip-carlosjr.51272/" title="Permalink" class="datePermalink"><abbr class="DateTime" data-time="1514849547" data-diff="350" data-datestring="Jan 1, 2018" data-timestring="11:32 PM" title="Jan 1, 2018 at 11:32 PM">7 minutes ago</abbr></a>
+		</span>
+	
+	
+			
+				
+				
+			</div>
+			
+			
+			
+		
+		 
+	
+	
+			
+			<div id="likes-post-768941"></div>
+		</div>
+	
+	</div> 
+<!-- test -->
+	
+	
+	
+	
+</li>
+			
+		
+			
+				
+
+
+<li id="post-768945" class="sectionMain message     " data-author="Snikle">
+
+	<div class="uix_message ">
+	
+		
+
+<div class="messageUserInfo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Person">	
+<div class="messageUserBlock online">	
+	
+		<div class="avatarHolder">
+			<div class="uix_avatarHolderInner">
+			<span class="helper"></span>
+			<a href="members/snikle.179862/" class="avatar Av179862l" data-avatarhtml="true"><img src="data/avatars/l/179/179862.jpg?1501624644" width="192" height="192" alt="Snikle"></a>
+			
+			<span class="Tooltip onlineMarker" data-offsetx="-22" data-offsety="-8"></span>
+			<!-- slot: message_user_info_avatar -->
+			</div>
+		</div>
+		
+
+	
+		<h3 class="userText">
+			<div class="uix_userTextInner">
+				<div class="uix_usernameWrapper">
+					<a href="members/snikle.179862/" class="username" dir="auto" itemprop="name">Snikle</a>
+					<div class="uix_threadSlide">
+						<span class="uix_threadSlideToggle Tooltip">
+							<span class="uix_threadSlideToggleExpand">
+								<i class="uix_icon uix_icon-expand"></i> 
+								<span class="uix_threadSlidePhrase">Expand</span>
+							</span>
+							<span class="uix_threadSlideToggleCollapse">
+								<i class="uix_icon uix_icon-collapse"></i> 
+								<span class="uix_threadSlidePhrase">Collapse</span>
+							</span>
+						</span>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<!-- slot: message_user_info_text -->
+		</h3>
+		
+	
+    
+          
+    
+    
+    
+
+		<div class="extraUserInfo">
+			
+			
+				
+					<dl class="pairsJustified">
+						<dt>Joined:</dt>
+						<dd>Sep 25, 2016</dd>
+					</dl>
+				
+				
+				
+					<dl class="pairsJustified">
+						<dt>Messages:</dt>
+						<dd><a href="search/member?user_id=179862" class="concealed" rel="nofollow">271</a></dd>
+					</dl>
+				
+
+				
+				
+				
+			
+				
+				
+				
+				
+				
+			
+				
+							
+						
+			
+			
+		</div>
+	
+		
+
+
+	<span class="arrow"><span></span></span>
+</div>
+</div>
+	
+		<div class="messageInfo primaryContent">
+			
+			
+			
+			<div class="messageContent">
+				<article>
+					<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
+						
+						
+						Now what happened?
+						<div class="messageTextEndMarker">&nbsp;</div>
+					</blockquote>
+				</article>
+				
+				
+			</div>
+			
+			
+			
+			
+			<div class="messageDetails">
+			
+				
+		
+		
+		
+		<a href="threads/rip-carlosjr.51272/#post-768945" title="Permalink" class="item muted postNumber hashPermalink OverlayTrigger" data-href="posts/768945/permalink">#2</a>
+		
+		<span class="item muted">
+			<span class="authorEnd"><a href="members/snikle.179862/" class="username author" dir="auto">Snikle</a>,</span>
+			<a href="threads/rip-carlosjr.51272/#post-768945" title="Permalink" class="datePermalink"><abbr class="DateTime" data-time="1514849732" data-diff="165" data-datestring="Jan 1, 2018" data-timestring="11:35 PM" title="Jan 1, 2018 at 11:35 PM">3 minutes ago</abbr></a>
+		</span>
+	
+	
+			
+				
+				
+			</div>
+			
+			
+			
+		
+		 
+	
+	
+			
+			<div id="likes-post-768945"></div>
+		</div>
+	
+	</div> 
+<!-- test -->
+	
+	
+	
+	
+</li>
+			
+		
+			
+				
+
+
+<li id="post-768946" class="sectionMain message     " data-author="workclock1">
+
+	<div class="uix_message ">
+	
+		
+
+<div class="messageUserInfo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Person">	
+<div class="messageUserBlock online">	
+	
+		<div class="avatarHolder">
+			<div class="uix_avatarHolderInner">
+			<span class="helper"></span>
+			<a href="members/workclock1.136129/" class="avatar Av136129l" data-avatarhtml="true"><img src="data/avatars/l/136/136129.jpg?1514839587" width="192" height="192" alt="workclock1"></a>
+			
+			<span class="Tooltip onlineMarker" data-offsetx="-22" data-offsety="-8"></span>
+			<!-- slot: message_user_info_avatar -->
+			</div>
+		</div>
+		
+
+	
+		<h3 class="userText">
+			<div class="uix_userTextInner">
+				<div class="uix_usernameWrapper">
+					<a href="members/workclock1.136129/" class="username" dir="auto" itemprop="name">workclock1</a>
+					<div class="uix_threadSlide">
+						<span class="uix_threadSlideToggle Tooltip">
+							<span class="uix_threadSlideToggleExpand">
+								<i class="uix_icon uix_icon-expand"></i> 
+								<span class="uix_threadSlidePhrase">Expand</span>
+							</span>
+							<span class="uix_threadSlideToggleCollapse">
+								<i class="uix_icon uix_icon-collapse"></i> 
+								<span class="uix_threadSlidePhrase">Collapse</span>
+							</span>
+						</span>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<!-- slot: message_user_info_text -->
+		</h3>
+		
+	
+    
+          
+    
+    
+    
+
+		<div class="extraUserInfo">
+			
+			
+				
+					<dl class="pairsJustified">
+						<dt>Joined:</dt>
+						<dd>Jan 4, 2016</dd>
+					</dl>
+				
+				
+				
+					<dl class="pairsJustified">
+						<dt>Messages:</dt>
+						<dd><a href="search/member?user_id=136129" class="concealed" rel="nofollow">1,724</a></dd>
+					</dl>
+				
+
+				
+				
+				
+			
+				
+				
+				
+				
+				
+			
+				
+							
+						
+			
+			
+		</div>
+	
+		
+
+
+	<span class="arrow"><span></span></span>
+</div>
+</div>
+	
+		<div class="messageInfo primaryContent">
+			
+			
+			
+			<div class="messageContent">
+				<article>
+					<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
+						
+						
+						his screen:<br>
+<br>
+
+	
+	<a href="https://www.beamng.com/attachments/untitled-png.368954/" target="_blank" class="LbTrigger" data-href="misc/lightbox"><img src="data/attachments/349/349945-1733b918e9a13c6e951089f2a5ab9050.jpg" alt="Untitled.png" class="bbCodeImage LbImage"></a>
+			
+ <br>
+<br>
+<a href="https://web.archive.org/web/20180101231856/https://www.beamng.com/members/carlosjr.251414/" target="_blank" class="externalLink" rel="nofollow">https://web.archive.org/web/20180101231856/https://www.beamng.com/members/carlosjr.251414/</a>
+						<div class="messageTextEndMarker">&nbsp;</div>
+					</blockquote>
+				</article>
+				
+				
+			</div>
+			
+			
+			
+			
+			<div class="messageDetails">
+			
+				
+		
+		
+		
+		<a href="threads/rip-carlosjr.51272/#post-768946" title="Permalink" class="item muted postNumber hashPermalink OverlayTrigger" data-href="posts/768946/permalink">#3</a>
+		
+		<span class="item muted">
+			<span class="authorEnd"><a href="members/workclock1.136129/" class="username author" dir="auto">workclock1</a>,</span>
+			<a href="threads/rip-carlosjr.51272/#post-768946" title="Permalink" class="datePermalink"><abbr class="DateTime" data-time="1514849802" data-diff="95" data-datestring="Jan 1, 2018" data-timestring="11:36 PM" title="Jan 1, 2018 at 11:36 PM">2 minutes ago</abbr></a>
+		</span>
+	
+	
+			
+				
+				
+			</div>
+			
+			
+			
+		
+		 
+	
+	
+			
+			<div id="likes-post-768946"></div>
+		</div>
+	
+	</div> 
+<!-- test -->
+	
+	
+	
+	
+</li>
+			
+		
+			
+				
+
+
+<li id="post-768948" class="sectionMain message     " data-author="sʎǝꓘ">
+
+	<div class="uix_message ">
+	
+		
+
+<div class="messageUserInfo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Person">	
+<div class="messageUserBlock online">	
+	
+		<div class="avatarHolder">
+			<div class="uix_avatarHolderInner">
+			<span class="helper"></span>
+			<a href="members/s%CA%8E%C7%9D%EA%93%98.176705/" class="avatar Av176705l" data-avatarhtml="true"><img src="data/avatars/l/176/176705.jpg?1514142436" width="192" height="192" alt="sʎǝꓘ"></a>
+			
+			<span class="Tooltip onlineMarker" data-offsetx="-22" data-offsety="-8"></span>
+			<!-- slot: message_user_info_avatar -->
+			</div>
+		</div>
+		
+
+	
+		<h3 class="userText">
+			<div class="uix_userTextInner">
+				<div class="uix_usernameWrapper">
+					<a href="members/s%CA%8E%C7%9D%EA%93%98.176705/" class="username" dir="auto" itemprop="name">sʎǝꓘ</a>
+					<div class="uix_threadSlide">
+						<span class="uix_threadSlideToggle Tooltip">
+							<span class="uix_threadSlideToggleExpand">
+								<i class="uix_icon uix_icon-expand"></i> 
+								<span class="uix_threadSlidePhrase">Expand</span>
+							</span>
+							<span class="uix_threadSlideToggleCollapse">
+								<i class="uix_icon uix_icon-collapse"></i> 
+								<span class="uix_threadSlidePhrase">Collapse</span>
+							</span>
+						</span>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<!-- slot: message_user_info_text -->
+		</h3>
+		
+	
+    
+          
+    
+    
+    
+
+		<div class="extraUserInfo">
+			
+			
+				
+					<dl class="pairsJustified">
+						<dt>Joined:</dt>
+						<dd>Sep 8, 2016</dd>
+					</dl>
+				
+				
+				
+					<dl class="pairsJustified">
+						<dt>Messages:</dt>
+						<dd><a href="search/member?user_id=176705" class="concealed" rel="nofollow">1,211</a></dd>
+					</dl>
+				
+
+				
+				
+				
+			
+				
+				
+				
+				
+				
+			
+				
+							
+						
+			
+			
+		</div>
+	
+		
+
+
+	<span class="arrow"><span></span></span>
+</div>
+</div>
+	
+		<div class="messageInfo primaryContent">
+			
+			
+			
+			<div class="messageContent">
+				<article>
+					<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
+						
+						
+						<a href="https://www.beamng.com/attachments/screenshot2018-01-01at62407pm-png.368955/" target="_blank" class="LbTrigger" data-href="misc/lightbox"><img src="data/attachments/349/349946-65f6f67fe85d83f4250fc5f9d137425a.jpg" alt="ScreenShot2018-01-01at62407PM.png" class="bbCodeImage LbImage"></a>
+			
+ 
+	
+	<a href="https://www.beamng.com/attachments/screenshot2018-01-01at63110pm-png.368956/" target="_blank" class="LbTrigger" data-href="misc/lightbox"><img src="data/attachments/349/349947-1bed09a736e30255ba8625a2ad06f87b.jpg" alt="ScreenShot2018-01-01at63110PM.png" class="bbCodeImage LbImage"></a>
+			
+ <br>
+that heppened<br>
+and this
+	
+	<a href="https://www.beamng.com/attachments/screenshot2018-01-01at62016pm-png.368957/" target="_blank" class="LbTrigger" data-href="misc/lightbox"><img src="data/attachments/349/349948-9b42be37ea2fe4a9263520cb8bbf7b9c.jpg" alt="ScreenShot2018-01-01at62016PM.png" class="bbCodeImage LbImage"></a>
+						<div class="messageTextEndMarker">&nbsp;</div>
+					</blockquote>
+				</article>
+				
+				
+			</div>
+			
+			
+			
+			
+			<div class="messageDetails">
+			
+				
+		
+		
+		
+		<a href="threads/rip-carlosjr.51272/#post-768948" title="Permalink" class="item muted postNumber hashPermalink OverlayTrigger" data-href="posts/768948/permalink">#4</a>
+		
+		<span class="item muted">
+			<span class="authorEnd"><a href="members/s%CA%8E%C7%9D%EA%93%98.176705/" class="username author" dir="auto">sʎǝꓘ</a>,</span>
+			<a href="threads/rip-carlosjr.51272/#post-768948" title="Permalink" class="datePermalink"><abbr class="DateTime" data-time="1514849894" data-diff="3" data-datestring="Jan 1, 2018" data-timestring="11:38 PM" title="Jan 1, 2018 at 11:38 PM">1 minute ago</abbr></a>
+		</span>
+	
+	
+			
+				
+				
+			</div>
+			
+			
+			
+		
+		 
+	
+	
+			
+			<div id="likes-post-768948"></div>
+		</div>
+	
+	</div> 
+<!-- test -->
+	
+	
+	
+	
+</li>
+			
+		
+		
+	</ol>
+
+	
+
+	<input type="hidden" name="_xfToken" value="">
+
+</form>
+
+	<div class="pageNavLinkGroup">
+			
+				<div class="linkGroup">
+					
+						
+							<a href="login/" class="concealed element">(You must log in or sign up to post here.)</a>
+						
+					
+				</div>
+			
+			<div class="linkGroup" style="display: none"><a href="javascript:" class="muted JsOnly DisplayIgnoredContent Tooltip">Show Ignored Content</a></div>
+
+			
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+						
+						
+						
+						
+							<!-- login form, to be moved to the upper drop-down -->
+							
+
+
+
+
+
+      
+
+
+
+						
+						
+			
+				</div>
+			
+			
+			
+						
+				
+			
+			
+			
+						
+			
+						
+			</div>
+	
+		</div>
+	</div>
+	
+
+</div>
+
+<footer>
+	
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+	
+		<div class="pageContent defaultBorderRadius">
+			<div class="pageWidth">
+			
+				
+				
+				
+				
+				
+				<ul class="footerLinks">
+					
+						<li><a href="//www.beamng.com" class="homeLink">Home</a></li>
+
+<li><a href="//beamng.gmbh" class="">Company</a></li>
+<li><a href="//beamng.gmbh/about-us" class="">About us</a></li>
+
+						
+							<li><a href="https://support.beamng.com/">Contact Us</a></li>
+						
+						<li><a href="help/">Help</a></li>
+					
+					
+						<li><a href="//wiki.beamng.com/TOS">Terms and Rules</a></li>
+						<li><a href="//wiki.beamng.com/Privacy_Policy">Privacy Policy</a></li>
+					
+
+<li><a href="//beamng.com/imprint" class="">Impressum</a></li>
+
+					<li class="topLink"><a href="/threads/rip-carlosjr.51272/#XenForo"><i class="uix_icon uix_icon-jumpToTop"></i> <span class="uix_hide">Top</span></a></li>
+				</ul>
+				
+				
+			
+			</div>
+			<span class="helper"></span>
+		</div>
+	
+</div>
+
+<div id="uix_stickyFooterSpacer"></div>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+<div class="footerLegal">
+	
+		<div class="pageContent defaultBorderRadius">
+			<div class="pageWidth">
+			<div id="copyright">
+				 
+				
+			</div>
+			
+			
+				<ul class="uix_socialMediaLinks">
+	<li class="facebook"><a href="https://www.facebook.com/BeamNGPhysics" target="_blank"><i class="uix_icon uix_icon-facebook"></i></a></li>
+        <li class="twitter"><a href="https://twitter.com/beamng" target="_blank"><i class="uix_icon uix_icon-twitter"></i></a></li>
+        <li class="youtube"><a href="https://www.youtube.com/user/beamng" target="_blank"><i class="uix_icon uix_icon-youtube"></i></a></li>
+        
+        
+        
+        
+        
+        
+        
+        <li class="steam"><a href="http://store.steampowered.com/app/284160/"><i class="uix_icon uix_icon-steam"></i></a></li>
+        
+        
+        
+        <li class="git"><a href="https://github.com/BeamNG/"><i class="uix_icon uix_icon-git"></i></a></li>
+        
+        
+        
+        <li class="contact"><a href="https://support.beamng.com/" target="_blank"><i class="uix_icon uix_icon-email"></i></a></li>
+        
+
+
+
+<!--ADD LIST ITEMS HERE -->
+
+
+
+        
+</ul>
+				
+			
+
+			<span class="helper"></span>
+		</div>
+	</div>	
+</div>
+
+
+
+
+</footer>
+
+<script>
+
+
+jQuery.extend(true, XenForo,
+{
+	visitor: { user_id: 0 },
+	serverTimeInfo:
+	{
+		now: 1514849897,
+		today: 1514764800,
+		todayDow: 1
+	},
+	_lightBoxUniversal: "0",
+	_enableOverlays: "1",
+	_animationSpeedMultiplier: "0",
+	_overlayConfig:
+	{
+		top: "10%",
+		speed: 0,
+		closeSpeed: 0,
+		mask:
+		{
+			color: "rgb(255, 255, 255)",
+			opacity: "0.6",
+			loadSpeed: 0,
+			closeSpeed: 0
+		}
+	},
+	_ignoredUsers: [],
+	_loadedScripts: {"nat_public_css":true,"thread_view":true,"message":true,"bb_code":true,"message_user_info":true,"login_bar":true,"moderator_bar":true},
+	_cookieConfig: { path: "/", domain: ".beamng.com", prefix: "xf_"},
+	_csrfToken: "",
+	_csrfRefreshUrl: "login/csrf-token-refresh",
+	_jsVersion: "d10db07f",
+	_noRtnProtect: false,
+	_noSocialLogin: false
+});
+jQuery.extend(XenForo.phrases,
+{
+	cancel: "Cancel",
+
+	a_moment_ago:    "A moment ago",
+	one_minute_ago:  "1 minute ago",
+	x_minutes_ago:   "%minutes% minutes ago",
+	today_at_x:      "Today at %time%",
+	yesterday_at_x:  "Yesterday at %time%",
+	day_x_at_time_y: "%day% at %time%",
+
+	day0: "Sunday",
+	day1: "Monday",
+	day2: "Tuesday",
+	day3: "Wednesday",
+	day4: "Thursday",
+	day5: "Friday",
+	day6: "Saturday",
+
+	_months: "January,February,March,April,May,June,July,August,September,October,November,December",
+	_daysShort: "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+
+	following_error_occurred: "The following error occurred",
+	server_did_not_respond_in_time_try_again: "The server did not respond in time. Please try again.",
+	logging_in: "Logging in",
+	click_image_show_full_size_version: "Click this image to show the full-size version.",
+	show_hidden_content_by_x: "Show hidden content by {names}"
+});
+
+// Facebook Javascript SDK
+XenForo.Facebook.appId = "";
+XenForo.Facebook.forceInit = false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</div> 
+<div class="uix_wrapperFix" style="height: 1px; margin-top: -1px;"></div>
+
+
+		</div> 
+	</div> 
+
+
+<script>
+
+</script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.beamng.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<!-- End Piwik Code -->
+
+
+<div id="calroot" style="display: none; position: absolute;"><div id="calhead"><a id="calprev">←</a><div id="caltitle"></div><a id="calnext">→</a></div><div id="calbody"><div id="caldays"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div><div id="calweeks"></div></div></div><div class="Menu JsOnly blockLinksList primaryContent" id="NavigationHiddenMenu" style="display: none;"><ul><li><a href="https://www.beamng.com/pages/chat/" class="navLink NoPopupGadget" rel="Menu">Chat</a></li><li><a href="https://www.beamng.com/link-forums/whats-new.52/" class="navLink NoPopupGadget" rel="Menu">What's new?</a></li></ul></div><div class="Menu" id="XenForoUniq0" style="display: none;">
+								<div class="primaryContent menuHeader">
+									<h3>Useful Searches</h3>
+								</div>
+								<ul class="secondaryContent blockLinksList">
+									<!-- block: useful_searches -->
+									<li><a href="find-new/posts?recent=1" rel="nofollow">Recent Posts</a></li>
+									
+									<!-- end block: useful_searches -->
+								</ul>
+							</div><div class="Menu blockLinksList primaryContent" id="NavigationLinksHiddenMenu"><ul><li><a href="search/?type=post">Search Forums</a></li><li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li><li><a href="members/" rel="nofollow">Find Member</a></li><li><a rel="Menu" class="NoPopupGadget">...</a></li></ul></div><div id="AjaxProgress" class="xenOverlay" style="top: 0px; left: 0px; position: fixed; display: none;"><div class="content"><span class="close"></span></div></div><div class="xenOverlay lightBox" style="top: 15px; left: 41.5px; position: fixed; display: none; z-index: auto;"><div class="formOverlay" data-overlayclass="lightBox" id="LightBox">
+
+	<div class="userInfo" id="LbUpper">
+		<span class="avatar" id="LbAvatar"><img alt="" src="data/avatars/l/176/176705.jpg?1514142436"></span>
+		
+		<div class="userText">			
+			<div class="userTextUpper">
+				<h2 id="LbUsername">sʎǝꓘ</h2>
+				<div class="gadgets">
+					<a id="LbNewWindow" target="_blank" title="Open in new window" href="https://www.beamng.com/attachments/screenshot2018-01-01at62016pm-png.368957/"><span>↑</span></a>
+					<a class="OverlayCloser" title="Close"><span>X</span></a>
+				</div>
+			</div>
+			
+			<div class="userTextLower muted">
+				<a id="LbDateTime" class="OverlayCloser" href="https://www.beamng.com/threads/rip-carlosjr.51272/" hash="#post-768948">A moment ago</a>
+				<a id="LbContentLink" class="OverlayCloser" href="https://www.beamng.com/threads/rip-carlosjr.51272/" hash="#post-768948">Show in original location</a>
+			</div>
+		</div>
+	</div>	
+	
+	<div class="imageContainer" style="">
+		<img id="LbImg" class="LbImg" alt="" style="max-width: 1580px; max-height: 749px;">
+		<a class="imageNav" id="LbPrev"><span class="ctrl"><span>&lt;</span></span></a>
+		<a class="imageNav" id="LbNext"><span class="ctrl"><span>&gt;</span></span></a>
+		<div class="imageCount"><span id="LbSelectedImage">3</span>/<span id="LbTotalImages">3</span></div>
+	</div>
+	
+	<div class="nav" id="LbLower">
+		<div class="thumbsContainer">
+			<ul id="LbThumbs" data-thumbheight="65" style="left: 609.5px;">
+				<li id="LbThumbTemplate"><a class="LightboxThumb"><img alt=""></a></li>
+			<li><a class="LightboxThumb"><img alt="" src="data/attachments/349/349946-65f6f67fe85d83f4250fc5f9d137425a.jpg" style="opacity: 0.5; width: 65px; top: -29.5px; visibility: visible;"></a></li><li><a class="LightboxThumb"><img alt="" src="data/attachments/349/349947-1bed09a736e30255ba8625a2ad06f87b.jpg" style="opacity: 0.5; width: 65px; top: -32.5px; visibility: visible;"></a></li><li><a class="LightboxThumb"><img alt="" src="data/attachments/349/349948-9b42be37ea2fe4a9263520cb8bbf7b9c.jpg" style="opacity: 1; height: 65px; left: -54.5px; visibility: visible;"></a></li></ul>
+			<div id="LbReveal" style="left: 745.5px; display: block;"></div>
+		</div>
+	</div>
+	
+	<!--<a class="close"></a>-->
+
+</div></div><div id="exposeMask" style="position: absolute; top: 0px; left: 0px; width: 1663px; height: 1710px; z-index: 9998; background-color: rgb(0, 0, 0); display: none; opacity: 0.6;"></div></body>
